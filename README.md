@@ -6,6 +6,7 @@ Because Electron does not prompts, I made one of my own.
 Powered by Bootstrap, this is a responsive modal-type prompt.
 Down here is a example of using it:
 ```js
+const prompt = require("./bs-prompt.min.js");
 new prompt({
   title:"Give your folder a name...",
   placeholder:"folder name",
