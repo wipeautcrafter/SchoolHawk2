@@ -28,7 +28,7 @@ module.exports = function(opt, call) {
 	};
 
 	$("body").append(
-		"<div class=\"modal fade bs-prompt-modal\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><h4 class=\"modal-title\">"+t.options.title+"</h4><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\"><input class=\"form-control bs-prompt-input\" type=\""+t.options.inputType+"\" placeholder=\""+t.options.placeholder+"\"></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-primary bs-prompt-submit\" data-dismiss=\"modal\">"+t.options.buttonText+"</button></div></div>"
+		"<div class=\"modal fade bs-prompt-modal\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><h4 class=\"modal-title\">"+t.options.title+"</h4><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\"><input class=\"form-control bs-prompt-input\" type=\""+t.options.inputType+"\" placeholder=\""+t.options.placeholder+"\"></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-"+t.options.buttonTheme+" bs-prompt-submit\" data-dismiss=\"modal\">"+t.options.buttonText+"</button></div></div>"
 	);
 
 	$(".bs-prompt-input").keyup(function(e) {
